@@ -11,8 +11,8 @@ jobs:
   test:
     # Job Level variable - Below is the example
     env:
-      MONGODB_USERNAME: manishsureshjain_db_user
-      MONGODB_PASSWORD: Kq7TPuPOQ7l7UCMD
+      MONGODB_USERNAME: ${{ secrets.MONGODB_USERNAME }}
+      MONGODB_PASSWORD: ${{ secrets.MONGODB_PASSWORD }}
       MONGODB_CLUSTER_ADDRESS: manishsjgitworkflow.ya0tcsz.mongodb.net
       PORT: 8080
     environment: testing
